@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER FORM</title>
+    <style>
+        body {
+            font-family: Georgia;
+            background-image: url('Background .jpg');
+            background-size: cover;
+            background-position: center;
+            color: #2a2828;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 50%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], select {
+            font-family: 'Arial', sans-serif;
+            padding: 5px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%; 
+            margin: 5px 0;
+        }
+        .button, input[type="submit"], input[type="reset"], a {
+            background: #5c2e0c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+            width: 100%; 
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+            background: #3e1d08;
+        }
+        input[type="reset"] {
+            background-color: #ccc;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center; 
+        }
+        a.button {
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1>Form Order</h1>
+    <form method="POST">
+        <pre>
+NAMA    : <input type="text" name="nama" size="30"><br>
+ALAMAT  : <input type="text" name="alamat" size="30"><br>
+TELP    : <input type="text" name="telp" size="15"> HP : <input type="text" name="hp" size="15"><br><br>
+
+<b>Jenis Kelamin:</b><br>
+    <input type="radio" name="kelamin" value="pria">PRIA <br>
+    <input type="radio" name="kelamin" value="wanita">WANITA<br><br>
+
+<b>Barang Yang Dipesan:</b><br>
+    <select name="barang" size="3" multiple>
+    <option>Gaspard long-sleeved cardigan</option>
+    <option>Cardigan Cathy</option>
+    <option>Orion Jumper</option>
+    <option>Biva Jumper</option>
+    <option>Corry Jumper</option>
+    <option>Armina Dress</option>
+    <option>Dalede Knit</option>
+    <option>Lauman Cardigan</option>
+    <option>Carila Top</option>
+    <option>Inacio Cardigan</option>
+    <option>Oversize Short Dress</option>
+    <option>Hanee Sleeve</option>
+    </select><br><br>
+
+<b>Cara Pembayaran:</b><br>
+    <input type="checkbox" name="bayar" value="mastercard">MASTER CARD <input type="checkbox" name="bayar" value="visacard">VISA CARD   No Kartu Kredit: <input type="text" name="kartu" size="30"><br>
+        </pre>
+        <div class="button-container">
+            <input type="submit" value="Order"> 
+            <input type="reset" value="Cancel">
+            <a href="product.html" class="button">Back to Products</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
